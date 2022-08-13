@@ -1,0 +1,16 @@
+.review-prew{
+  &__text{
+    line-height: 1.79;
+    margin-bottom: 15px;
+  }
+  &__author{
+    background-color: $white;
+    color: $oslo-gray;
+    border: 1px solid rgb(141, 139, 143);
+    line-height: 1.8;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 15px;
+  }
+}

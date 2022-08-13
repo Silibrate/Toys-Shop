@@ -1,0 +1,87 @@
+.search {
+  position: relative;
+
+  /*  &.search--open{
+    .search__body{
+      display: block;
+    }
+  } */
+  &__icon {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    fill: $blaze-orange;
+  }
+
+  &__body {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: $white;
+    padding: 20px;
+    top: -35px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.21), 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    width: 550px;
+
+  }
+
+  &__body_open {
+    display: block;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    height: 48px;
+    border-right: 0;
+    color: $tundora;
+    padding: 0 50px 0 20px;
+    border: 1px solid $alto;
+    border-radius: 2px 0 0 2px;
+    line-height: 48px;
+    width: 85%;
+
+    &::placeholder {
+      color: $placeholder-color;
+    }
+
+    &-wrapper {
+      flex: 1;
+      position: relative;
+    }
+  }
+
+  &__clear {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    top: 0;
+    width: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+    &-icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__btn {
+    background-color: $blaze-orange;
+    padding: 0 15px;
+    height: 50px;
+    border: 0;
+    flex: 0 0 auto;
+    font-weight: 700;
+    color: $white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+  }
+
+}

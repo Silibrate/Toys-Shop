@@ -1,0 +1,61 @@
+.btn {
+  cursor: pointer;
+  background-color: $white;
+  height: 40px;
+  border: 1px solid $blaze-orange;
+  border-radius: 2px;
+  line-height: 38px;
+  width: 100%;
+  color: $blaze-orange;
+  font-weight: 600;
+  padding: 0 20px;
+  display: block;
+  text-align: center;
+  transition: all linear .3s;
+
+  &:hover {
+    background-color: $blaze-orange;
+    color: $white;
+  }
+
+  &.btn {
+    &--transparent {
+      &-white {
+        border-color: $white;
+        background-color: transparent;
+        color: $white;
+
+        &:hover {
+          background-color: $white;
+          color: $tundora;
+        }
+      }
+
+      &-gray {
+        background-color: transparent;
+        border-color: rgba(38, 38, 38, 0.15);
+        color: $oslo-gray;
+        &:hover{
+          background-color: $black;
+          color: $white;
+        }
+      }
+
+    }
+
+    &--round {
+      border-radius: 20px;
+    }
+
+    &--inline {
+      display: inline-block;
+      width: auto;
+    }
+
+    &--smal {
+      height: 30px;
+      line-height: 28px;
+      padding: 0 15px;
+    }
+  }
+}

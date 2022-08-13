@@ -1,0 +1,108 @@
+.main-nav {
+  &__list {
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+  &__item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      .main-nav {
+        &__link {
+          border-bottom-color: $blaze-orange ;
+        }
+
+        &__dropdown-wrapper {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__link {
+    border-bottom: 2px solid transparent;
+    color: $tundora;
+    display: block;
+    font-size: 16px;
+    line-height: 1.88;
+    font-weight: 600;
+    padding: 15px 0;
+
+    &:hover {
+      border-bottom-color: $blaze-orange;
+    }
+  }
+
+  &__dropdown {
+    background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+    left: 0;
+    display: flex;
+    padding-top: 10px;
+    width: 720px;
+
+    &-wrapper {
+      display: none;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      z-index: 5;
+    }
+
+    &_some {
+      width: 360px;
+    }
+  }
+
+  &__col {
+    flex: 1;
+  }
+}
+
+.main-subnav {
+  &__list {
+    width: 360px;
+    position: relative;
+
+    .main-subnav__list {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+    }
+  }
+
+  &__item {
+    &:hover {
+      &>.main-subnav__link {
+        background-color: $athens-gray;
+        color: $blaze-orange;
+      }
+
+      .main-subnav__list {
+        display: block;
+      }
+    }
+  }
+
+
+  &__link {
+    align-items: center;
+    color: $mine-shaft;
+    display: flex;
+    line-height: 20px;
+    padding: 10px;
+  }
+
+  &__icon {
+    height: 12px;
+    width: 8px;
+    margin-left: auto;
+  }
+}
